@@ -1,0 +1,39 @@
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+#cal{
+    
+    background-color:grey;
+    border-radius: 7px ;
+    width: 200px;
+    
+
+}
+#display{
+    width: 85%;
+    margin: 10px;
+    font-size: 25px;
+    border: 3px solid greenyellow;
+    
+}
+
+.button{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: skyblue;
+}
+.button-container{
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}

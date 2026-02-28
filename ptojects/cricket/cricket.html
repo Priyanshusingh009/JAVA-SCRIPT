@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>priyanshu cricket league</title>
+    <style>
+        body {
+            text-align: center;
+            background-color:black;
+        }
+        h1 {
+            color: rgb(128, 25, 25);
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 20px;
+            border: solid goldenrod;
+        }
+           
+            button {
+                border-radius: 20px;
+                margin: 10px;
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+    </style> 
+    
+</head>
+<body>
+
+    <h1><u>BAT BALL STUMP GAME</u></h1>
+    <button onclick="
+    const userChMsg='you chosen BAT';
+    
+    let randNumberber = (Math.random() * 3);
+    let computerChoice;
+    if (randNumberber <= 1 && randNumberber >= 0) {
+        computerChoice = 'BAT';
+       console.log('computer chosen ' + computerChoice);
+    }
+    else if (randNumberber > 1 && randNumberber <= 2) {
+        computerChoice = 'BALL';
+       console.log('computer chosen ' + computerChoice);
+    }
+    else {
+        computerChoice = 'STUMP';
+       console.log('computer chosen ' + computerChoice);
+    }
+    const computerChMsg = 'computer chosen ' + computerChoice;
+    let resultMsg;
+    if(computerChoice ==='BALL'){
+        resultMsg = 'you win';
+    }
+    else if(computerChoice ==='STUMP'){
+        resultMsg = 'you lose';
+    }
+    else {
+       resultMsg = 'match draw';
+    }
+     alert(userChMsg + '\n' + computerChMsg + '\n' + resultMsg);
+    
+    
+    
+    
+    ">BAT</button>
+    <button onclick="
+let userMsg = 'You chose BOWL';
+
+let randomNumber = Math.random() * 3;
+let computerChoice;
+let resultMsg;
+
+if (randomNumber <= 1) {
+  computerChoice = 'BAT';
+} else if (randomNumber <= 2) {
+  computerChoice = 'BOWL';
+} else {
+  computerChoice = 'STUMP';
+}
+
+if (computerChoice === 'BOWL') {
+  resultMsg = 'Match Draw';
+} else if (computerChoice === 'STUMP') {
+  resultMsg = 'You Win';
+} else {
+  resultMsg = 'You Lose';
+}
+
+alert(userMsg + '\nComputer chose ' + computerChoice + '\n' + resultMsg);
+">BOWL</button>
+
+    <button onclick="
+let userMsg = 'You chose STUMP';
+
+let randomNumber = Math.random() * 3;
+let computerChoice;
+let resultMsg;
+
+if (randomNumber <= 1) {
+  computerChoice = 'BAT';
+} else if (randomNumber <= 2) {
+  computerChoice = 'BOWL';
+} else {
+  computerChoice = 'STUMP';
+}
+
+if (computerChoice === 'BAT') {
+  resultMsg = 'You Win';
+} else if (computerChoice === 'STUMP') {
+  resultMsg = 'Match Draw';
+} else {
+  resultMsg = 'You Lose';
+}
+
+alert(userMsg + '\nComputer chose ' + computerChoice + '\n' + resultMsg);
+">STUMP</button>
+
+
+
+</body>
+
+</html>
